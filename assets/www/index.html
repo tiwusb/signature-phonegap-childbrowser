@@ -1,29 +1,39 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta name="viewport" content="width=320; user-scalable=no" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Minimal AppLaud App</title>
+    <head>
+        <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" >
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
 
-	  <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
-	  <script type="text/javascript" charset="utf-8">
-        var onDeviceReady = function() {
-            document.getElementById("devready").innerHTML = "OnDeviceReady fired.";
-        };
+        <script src="jquery.mobile/jquery-1.7.2.min"></script>
+        <script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+        
+        <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
 
-        function init() {
-            document.addEventListener("deviceready", onDeviceReady, true);
-        }   
-</script>  
+        <script src="childbrowser.js" type="text/javascript" charset="utf-8"></script>
 
-  </head>
-  <body onload="init();" id="stage" class="theme">
-    <h2>Minimal AppLaud App</h2>
+        <title>Signature</title>
 
-	<p>Your app goes here.</p>
-	<p>
-    <span id="devready">onDeviceReady not fired.</span>
-    </p>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            var onDeviceReady = function() {
+                document.getElementById("devready").innerHTML = "OnDeviceReady fired.";
+            };
 
-  </body>
+            function init() {
+                document.addEventListener("deviceready", onDeviceReady, true);
+            }
+        </script>
+
+    </head>
+    <body onload="init();" id="stage" class="theme">
+        <h2>Minimal AppLaud App</h2>
+
+        <p>
+            Your app goes here.
+        </p>
+        <p>
+            <span id="devready">onDeviceReady not fired.</span>
+        </p>
+
+    </body>
 </html>
