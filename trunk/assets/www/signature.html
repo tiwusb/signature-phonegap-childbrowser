@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" >
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+
+        <script src="jquery.mobile/jquery-1.7.2.min"></script>
+
+        <script src="scripts/signature.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
+
+        <script src="childbrowser.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="signatureLibs/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="signatureLibs/jSignature.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script type="text/javascript" charset="utf-8">
+            console.log("Device ready not -------->");
+
+            $(document).ready(function() {
+                $("#signature").jSignature({
+                    'width' : 280,
+                    'height' : 400
+                });
+                console.log("fired -------->");
+
+                $("#finishSignature").click(function() {
+                    //TODO converting files
+                    try {
+                        var dataSVGBase64 = $("#signature").jSignature("getData", "svgbase64");
+                        getSignatureData(dataSVGBase64);
+
+                        console.log(" " + dataSVGBase64);
+
+                    } catch( err ) {
+                        alert(err);
+
+                    }
+
+                    window.location = "www.google.com";
+                    //window.location = "www.google.com";
+                    /*
+                    *
+                    * XXX: how to implement a location change event lister ??
+                    * done in signature js
+                    * button finishSignature
+                    * -->
+                    * change url  in child browser
+                    * -->
+                    * catch the change in parent browser
+                    * -->
+                    * close child browser
+                    *
+                    * DONE
+                    */
+                    // closeChildBrowser();
+                });
+
+                $("#resetSignature").click(function() {
+                    $("#signature").jSignature("reset");
+                });
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div data-role="page">
+            <script src="childbrowser.js" type="text/javascript" charset="utf-8"></script>
+            <script src="scripts/signature.js" type="text/javascript" charset="utf-8"></script>
+            <div data-role="content" data-fullscreen="true">
+                <div id="signature"></div>
+                <a href="#" id="finishSignature" data-role="button" ></a>
+                <a href="#" id="resetSignature" data-role="button" ></a>
+            </div>
+
+        </div>
+
+    </body>
+</html>
