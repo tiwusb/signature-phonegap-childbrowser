@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CordovaStarter5", "CordovaStarter5\CordovaStarter5.csproj", "{B122C327-E478-4B7E-A6D5-A4E7680C1B6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B122C327-E478-4B7E-A6D5-A4E7680C1B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B122C327-E478-4B7E-A6D5-A4E7680C1B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B122C327-E478-4B7E-A6D5-A4E7680C1B6B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B122C327-E478-4B7E-A6D5-A4E7680C1B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B122C327-E478-4B7E-A6D5-A4E7680C1B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B122C327-E478-4B7E-A6D5-A4E7680C1B6B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

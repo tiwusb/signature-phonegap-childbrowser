@@ -1,0 +1,14 @@
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\Bin\Release\ApplicationIcon.png
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\Bin\Release\Background.png
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\Bin\Release\CordovaStarter5.dll
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\Bin\Release\CordovaStarter5.pdb
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\Bin\Release\AppManifest.xaml
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\Bin\Release\CordovaStarter5.xap
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\Bin\Release\WP7CordovaClassLib.dll
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\obj\Release\ResolveAssemblyReference.cache
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\obj\Release\App.g.i.cs
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\obj\Release\MainPage.g.i.cs
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\obj\Release\CordovaStarter5.g.resources
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\obj\Release\CordovaStarter5.dll
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\obj\Release\CordovaStarter5.pdb
+c:\users\mhu\documents\visual studio 2010\Projects\CordovaStarter5\CordovaStarter5\obj\Release\XapCacheFile.xml
