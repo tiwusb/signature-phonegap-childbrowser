@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is auto-generated, do not edit! -jm -->
+<CordovaSourceDictionary>
+    <FilePath Value="www\scripts\common.js"/>
+    <FilePath Value="www\scripts\dataBase.js"/>
+    <FilePath Value="www\scripts\signature.js"/>
+    <FilePath Value="www\cordova-1.6.1.js"/>
+    <FilePath Value="www\cordova-1.7.0.js"/>
+    <FilePath Value="www\index.html"/>
+    <FilePath Value="www\jquery.mobile\jquery.mobile-1.1.0.css"/>
+    <FilePath Value="www\jquery.mobile\jquery.mobile-1.1.0.js"/>
+    <FilePath Value="www\jquery.mobile\jquery.mobile-1.1.0.min.css"/>
+    <FilePath Value="www\jquery.mobile\jquery.mobile-1.1.0.min.js"/>
+    <FilePath Value="www\master.css"/>
+</CordovaSourceDictionary>

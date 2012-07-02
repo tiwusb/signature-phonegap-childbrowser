@@ -1,0 +1,692 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" >
+
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+
+        <script src="jquery.mobile/jquery-1.7.2.min"></script>
+
+      
+        <script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
+        <script type="text/javascript" charset="utf-8" src="scripts/common.js"></script>
+
+        <!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    </head>
+
+    <body >
+
+        <div data-role="page" data-fullscreen="true" id="loginPage" theme="b">
+        	
+            <div data-role="content">
+                <div data-role="fieldcontainer">
+                    <label for="Votre ID">Votre ID:</label>
+             
+                    <input type="number" id="userID" name="userID">
+                </div>
+                <div data-role="fieldcontainer">
+
+                    <label for="Votre Mot de pass"> Votre MDP:</label>
+                    <input  type="password" id="userPassword" name="userPassword">
+                </div>
+
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#mainPage" data-role="button" data-inline="true" data-transition="pop">Let's go</a>
+                    <a href="#" data-role="button" data-inline="true" data-transition="pop">annuler</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="page" data-fullscreen="true" id="mainPage" data-add-back-btn="true" data-back-btn-text="Back" data-back-btn-theme="e" theme="b" >
+
+            <div data-role="content">
+
+                <div data-role="navbar" data-id="menuMain" >
+                    <ul>
+                        <li>
+                            <a href="#mainPage" class="ui-btn-active ui-state-persist" data-icon="home" data-transition="pop" data-role="button">Accueil</a>
+                        </li>
+
+                        <li>
+                            <a href="#taskToDo" data-icon="star" data-transition="pop" data-role="button" >Tâche à faire</a>
+                        </li>
+                        <li>
+                            <a href="#taskFinished" data-icon="grid" data-transition="pop" >tâche terminée</a>
+                        </li>
+                        <li>
+                            <a href="#syncTask" data-icon="gear" data-transition="pop">Sync Tâche</a>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    now? 'em on throme, and th aftly me much Larninamon hister samentaid, I says yone. Ame les, on, seem bright med, fin whatere fas wetterron courn had I, sisho in P
+                </p>
+
+                <div>
+                    <p>
+                        <a href="#taskToDo" data-role="button" data-transition="pop" >12 tâches à faire </a>
+                        <a href="#taskFinished" data-role="button" data-transition="pop">tâches terminées</a>
+                        <a href="#taskToDo" data-role="button" data-transition="pop" >tâche en retard</a>
+                        <a href="#syncTask" data-role="button" data-transition="pop">tâche à synchroniser</a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div data-role="page" data-fullscreen="true" id="taskToDo" data-title="frontDesk" data-add-back-btn="true" data-back-btn-text="Back" data-back-btn-theme="e" theme="b" >
+
+            <div data-role="content" >
+                <div data-role="navbar" data-id="menuMain" >
+                    <ul>
+                        <li>
+                            <a href="#mainPage" data-icon="home" data-transition="slide" data-role="button">Accueil</a>
+                        </li>
+
+                        <li>
+                            <a href="#taskToDo" class="ui-btn-active ui-state-persist"  data-icon="star" data-transition="slide" data-role="button" >Tâche à faire</a>
+                        </li>
+                        <li>
+                            <a href="#taskFinished" data-icon="grid" data-transition="slide" >tâche terminée</a>
+                        </li>
+                        <li>
+                            <a href="#syncTask" data-icon="gear" data-transition="slide">Sync Tâche</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="ture">
+                        <h2> TASK 1</h2>
+                        <ul>
+                            <li>
+                                to the raw primordia gives birth to the er. Apparently, thell, rubber gloves. Juan was starting to spy on forever, which you hear
+                            </li>
+                            <li>
+                                the fucking weirder. Apparently, the wrong ways. Rubber ball, rubber gloves. Juan was starting to spy on forever, which you hear
+                            </li>
+                            <li>
+                                parently, the wrong ways. Rubber ball, rubber gloves. Juan was starting to spy on forever, which you hear
+                            </li>
+
+                            <li>
+
+                                s ready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+
+                            <a href="#excuteTask" data-rel="dialog" data-transition="pop" data-role="button">Excute</a>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div data-role="page" data-fullscreen="true" id="syncTask" theme="b">
+            <div data-role="content">
+
+                <div data-role="navbar" data-id="menuMain" >
+                    <ul>
+                        <li>
+                            <a href="#mainPage"  data-icon="home" data-transition="slide" data-role="button">Accueil</a>
+                        </li>
+
+                        <li>
+                            <a href="#taskToDo" data-icon="star" data-transition="slide" data-role="button" >Tâche à faire</a>
+                        </li>
+                        <li>
+                            <a href="#taskFinished"  data-icon="grid" data-transition="slide" >tâche terminée</a>
+                        </li>
+                        <li>
+                            <a href="#syncTask" class="ui-btn-active ui-state-persist"  data-icon="gear" data-transition="slide">Sync Tâche</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2>Task1</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+
+                </div>
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2>Task2</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h2>Task3</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h2>Task4</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+                </div>
+
+                <a href="#taskSynced" data-rel="dialog" data-role="button" data-transition="pop">Sync toutes des tâches</a>
+            </div>
+
+        </div>
+        <div data-role="page" data-fullscreen="true" id="taskExcutionMain" theme="b">
+            <div data-role="content" >
+                <textarea>
+                    
+                    
+
+e's ready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+
+                    
+                </textarea>                                                                                                                                                                                                                                                                                                                                                                                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div data-role="navbar" data-id="taskStatus" >
+                    <ul>
+                        <li>
+                            <a href="#taskToDo"  data-icon="home" data-transition="pop" data-role="button">fermer</a>
+                        </li>
+
+                        <li>
+                            <a href="#saveTask"  data-rel="dialog" data-icon="star" data-transition="pop" data-role="button" >enregistrer</a>
+                        </li>
+                        <li>
+                            <a href="#finishTask" data-rel="dialog" data-icon="grid" data-transition="pop" data-role="button">terminer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-id="taskExcutionOperation" >
+                    <ul>
+                        <li>
+                            <a href="#infoGene"  data-icon="home" data-transition="slide" data-role="button">info general</a>
+                        </li>
+
+                        <li>
+                            <a href="#infoTech" data-icon="star" data-transition="slide" data-role="button" >info technique</a>
+                        </li>
+                        <li>
+                            <a href="#taskComment"  data-icon="grid" data-transition="slide" >commentaire</a>
+                        </li>
+                        <li>
+                            <a href="#taskValidation"  data-icon="gear" data-transition="slide">validation</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div data-role="page" data-fullscreen="true" id="infoGene" theme="b">
+
+            <div data-role="content" >
+
+                <div data-role="navbar" data-id="taskStatus" >
+                    <ul>
+                        <li>
+                            <a href="#taskToDo" class="ui-btn-active ui-state-persist"  data-icon="home" data-transition="pop" data-role="button">fermer</a>
+                        </li>
+
+                        <li>
+                            <a href="#saveTask"  data-rel="dialog" data-icon="star" data-transition="pop" data-role="button" >enregistrer</a>
+                        </li>
+                        <li>
+                            <a href="#finishTask" data-rel="dialog" data-icon="grid" data-transition="pop" data-role="button">terminer</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>
+                        autady for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                    </p>
+
+                </div>
+
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h2>task1</h2>
+                        <ul>
+                            <li>
+                                man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                            <li>
+                                authready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                            <li>
+                                Mobile authority g as if he's ready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h2>Task2</h2>
+                        <ul>
+                            <li>
+                                Velocity authorihammer and a thing as if he's ready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+
+                            </li>
+                            <li>
+                                authority of boed him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+
+                            </li>
+                            <li>
+                                called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                            <li>
+                                ccuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-id="taskExcutionOperation" >
+                    <ul>
+                        <li>
+                            <a href="#infoGene"  data-icon="home" data-transition="slide" data-role="button">info general</a>
+                        </li>
+
+                        <li>
+                            <a href="#infoTech" data-icon="star" data-transition="slide" data-role="button" >info technique</a>
+                        </li>
+                        <li>
+                            <a href="#taskComment"  data-icon="grid" data-transition="slide" >commentaire</a>
+                        </li>
+                        <li>
+                            <a href="#taskValidation"  data-icon="gear" data-transition="slide">validation</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div data-role="page" data-fullscreen="true" id="infoTech" theme="b">
+
+            <div data-role="content" >
+
+                <div data-role="navbar" data-id="taskStatus" >
+                    <ul>
+                        <li>
+                            <a href="#taskToDo" class="ui-btn-active ui-state-persist"  data-icon="home" data-transition="pop" data-role="button">fermer</a>
+                        </li>
+
+                        <li>
+                            <a href="#saveTask"  data-rel="dialog" data-icon="star" data-transition="pop" data-role="button" >enregistrer</a>
+                        </li>
+                        <li>
+                            <a href="#finishTask" data-rel="dialog" data-icon="grid" data-transition="pop" data-role="button">terminer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        en it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                    </p>
+
+                </div>
+
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h2>task1</h2>
+                        <ul>
+                            <li>
+                                led him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                            <li>
+                                ready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                            <li>
+                                hammer and a thing as if he's ready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h2>Task2</h2>
+                        <ul>
+                            <li>
+                                ing to hammer and a thing as if he's ready for me even called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+
+                            </li>
+                            <li>
+                                a called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+
+                            </li>
+                            <li>
+                                authority n called him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                            <li>
+                                autholled him taken it accuses man with a cap: so at last.' Joe's Christmas salutation, when I touch here?' she then delivered this epistle: `MI DEER JO wOT
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-id="taskExcutionOperation" >
+                    <ul>
+                        <li>
+                            <a href="#infoGene"  data-icon="home" data-transition="slide" data-role="button">info general</a>
+                        </li>
+
+                        <li>
+                            <a href="#infoTech" data-icon="star" data-transition="slide" data-role="button" >info technique</a>
+                        </li>
+                        <li>
+                            <a href="#taskComment"  data-icon="grid" data-transition="slide" >commentaire</a>
+                        </li>
+                        <li>
+                            <a href="#taskValidation"  data-icon="gear" data-transition="slide">validation</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div data-role="page" data-fullscreen="true" id="taskComment" theme="b">
+
+            <div data-role="content" >
+                <div data-role="navbar" data-id="taskStatus" >
+                    <ul>
+                        <li>
+                            <a href="#taskToDo" class="ui-btn-active ui-state-persist"  data-icon="home" data-transition="pop" data-role="button">fermer</a>
+                        </li>
+
+                        <li>
+                            <a href="#saveTask"  data-rel="dialog" data-icon="star" data-transition="pop" data-role="button" >enregistrer</a>
+                        </li>
+                        <li>
+                            <a href="#finishTask" data-rel="dialog" data-icon="grid" data-transition="pop" data-role="button">terminer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontainer" >
+                    <label for="Comments">Votre commentaire</label>
+                    <textarea name="comments"></textarea>
+                </div>
+
+                <a href="#testComment" data-role="button" data-transition="pop">valider</a>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-id="taskExcutionOperation" >
+                    <ul>
+                        <li>
+                            <a href="#infoGene"  data-icon="home" data-transition="slide" data-role="button">info general</a>
+                        </li>
+
+                        <li>
+                            <a href="#infoTech" data-icon="star" data-transition="slide" data-role="button" >info technique</a>
+                        </li>
+                        <li>
+                            <a href="#taskComment"  data-icon="grid" data-transition="slide" >commentaire</a>
+                        </li>
+                        <li>
+                            <a href="#taskValidation"  data-icon="gear" data-transition="slide">validation</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div data-role="page" data-fullscreen="true" id="taskValidation" theme="b">
+
+            <div data-role="content" >
+                <div data-role="navbar" data-id="taskStatus" >
+                    <ul>
+                        <li>
+                            <a href="#taskToDo" class="ui-btn-active ui-state-persist"  data-icon="home" data-transition="pop" data-role="button">fermer</a>
+                        </li>
+
+                        <li>
+                            <a href="#saveTask"  data-rel="dialog" data-icon="star" data-transition="pop" data-role="button" >enregistrer</a>
+                        </li>
+                        <li>
+                            <a href="#finishTask" data-rel="dialog" data-icon="grid" data-transition="pop" data-role="button">terminer</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-role="fieldcontainer" >
+                    <label for="Comments">Votre commentaire</label>
+                    <textarea name="comments"></textarea>
+                </div>
+
+                <div data-role="controlgroup">
+                    <a href="#" data-role="button">Date</a>
+                    <a href="#signatureClient" data-role="button">Signature</a>
+
+                </div>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-id="taskExcutionOperation" >
+                    <ul>
+                        <li>
+                            <a href="#infoGene"  data-icon="home" data-transition="slide" data-role="button">info general</a>
+                        </li>
+
+                        <li>
+                            <a href="#infoTech" data-icon="star" data-transition="slide" data-role="button" >info technique</a>
+                        </li>
+                        <li>
+                            <a href="#taskComment"  data-icon="grid" data-transition="slide" >commentaire</a>
+                        </li>
+                        <li>
+                            <a href="#taskValidation"  data-icon="gear" data-transition="slide">validation</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div data-role="page" id="saveTask" theme="b">
+            <div data-role="content" id="saveTaskOK" theme="b">
+
+                <p>
+                    La modification est bien enregistrée
+                </p>
+                <a href="#infoGene" data-role="button" data-transition="pop">Retourner la tâche</a>
+
+            </div>
+
+        </div>
+
+        <div data-role="page" id="finishTask" theme="b">
+            <div data-role="header">
+                <p>
+                    Si vous terminez cette tâche , vous ne pouvez pas la modifier encore
+                </p>
+            </div>
+
+            <div data-role="content">
+                <a href="#infoGene" data-role="button" data-transition="pop">Retourner</a>
+
+                <a href="#infoGene" data-role="button" data-transition="pop">Terminer</a>
+            </div>
+
+        </div>
+
+        <div data-role="page" data-fullscreen="true" id="taskFinished" data-title="BI">
+
+            <div data-role="content">
+
+                <div data-role="navbar" data-id="menuMain" >
+                    <ul>
+                        <li>
+                            <a href="#mainPage"  data-icon="home" data-transition="slide" data-role="button">Accueil</a>
+                        </li>
+
+                        <li>
+                            <a href="#taskToDo" data-icon="star" data-transition="slide" data-role="button" >Tâche à faire</a>
+                        </li>
+                        <li>
+                            <a href="#taskFinished" class="ui-btn-active ui-state-persist" data-icon="grid" data-transition="slide" >tâche terminée</a>
+                        </li>
+                        <li>
+                            <a href="#syncTask" data-icon="gear" data-transition="slide">Sync Tâche</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2>Task1</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+
+                </div>
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2>Task2</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h2>Task3</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h2>Task4</h2>
+                    <p>
+
+                        y; the bet brestesee th dower ingencleg. I compin thave my I compret, mys mank it a shou curb thated Mrs st was sompearchandeen ne th to yound colver
+
+                        f-post and it!' `Hown the red the privend I he was th ifelf piddly. To-gooddence -- down the son, I hit wity ch. Heaking, was smighat fore sa
+
+                    </p>
+                </div>
+            </div>
+            <div data-role="footer"></div>
+        </div>
+
+        <div data-role="page" id="excuteTask">
+            <div data-role="content">
+                <div>
+                    <p>
+
+                        ccauslit ontim he sque, abow, formseld for me, und wit IT witiewhe pied and I no hat, al surtencloor ned I if then thimeme skento l
+                    </p>
+                    <div data-role="controlgroup">
+                        <a href="#infoGene" data-role="button" data-transition="pop">Execute cette tâche</a>
+                        <a href="#taskToDo" data-role="button" data-transition="pop">Annuler</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div data-role="page" id="taskSynced">
+            <div data-role="content" data-position="fixed">
+                <p>
+                    Toutes les tâche sont bien synchronisiées
+                </p>
+
+                <a href="#mainPage" data-role="button" data-transition="pop">Retourner accueil</a>
+
+            </div>
+
+        </div>
+
+        <script type="text/javascript" charset="utf-8" src="scripts/dataBase.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/accelerometer.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/compass.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/connection.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/contacts.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/device.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/events.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/geolocation.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/media.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/notification.js"></script>
+        <script type="text/javascript" charset="utf-8" src="apis/storage.js"></script>
+    </body>
+</html>
