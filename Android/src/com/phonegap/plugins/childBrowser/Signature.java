@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 
+import org.apache.commons.
+
 public class Signature extends Plugin {
 
 	@Override
